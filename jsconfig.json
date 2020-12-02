@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "@components/*": ["./src/components/*"],
+        "@assets/*": ["./src/assets/*"],
+        "@config/*": ["./src/config/*"],
+        "@constants/*": ["./src/constants/*"],
+        "@i18n/*": ["./src/i18n/*"],
+        "@redux/*": ["./src/redux/*"],
+        "@sagas/*": ["./src/sagas/*"],
+        "@screens/*": ["./src/screens/*"],
+        "@services/*": ["./src/services/*"],
+        "@utils/*": ["./src/utils/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+}
+  
