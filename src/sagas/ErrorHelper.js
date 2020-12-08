@@ -1,7 +1,7 @@
 // import config from "@config/AppConfig";
 
 export function parseRestError(response) {
-  if (__DEV__) console.log("Parse Error:", response);
+  // if (__DEV__) console.log("Parse Error:", response);
   try {
     if (response && response.data && response.data.errors) {
       const temp = response.data.errors[""][0];
@@ -37,9 +37,9 @@ export function parseRestError(response) {
       return "timeoutError";
     }
   } catch (e) {
-    if (__DEV__) {
-      console.log("parseRestError: " + e);
-    }
+    // if (__DEV__) {
+    //   console.log("parseRestError: " + e);
+    // }
   }
   return "unknownError";
 }
