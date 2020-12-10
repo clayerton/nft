@@ -15,7 +15,7 @@ i18n
     .init({
         resources,
         fallbackLang: 'zh',
-        debug: true,
+        // debug: true,
         lng: 'zh',
         keySeparator: '.',
         interpolation: {

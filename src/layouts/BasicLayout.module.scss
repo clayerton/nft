@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    min-width: 1280px;
+    .main {
+        background-color: #EFF1FE;
+        flex: 1;
+    }
+}

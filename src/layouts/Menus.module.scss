@@ -1,11 +1,27 @@
 .nav {
-    width: 230px;
+    width: 194px;
     background: #112DF2;
+    min-height: calc(100vh - 206px);
+    padding: 0 18px;
+    padding-top: 206px;
     .router {
         width: 194px;
         height: 64px;
+        line-height: 64px;
+        display: block;
+        text-decoration: none;
         .link {
             color: #fff;
+            padding-left: 63px;
+
+        }
+        
+    }
+    .select {
+        background: #FFFFFF;
+        border-radius: 20px;
+        .link {
+            color: #000;
         }
     }
 }
