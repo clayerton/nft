@@ -7,9 +7,10 @@ const tokenOption = (token) => ({
 
 const createApi = () => {
   const api = create({
-    baseURL: 'http://nft.botfans.org',
+    // baseURL: 'http://nft.botfans.org',
+    baseURL: 'http://api.nftable.org',
+
     headers: {
-      "Cache-Control": "no-cache",
       Accept: "application/json",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -19,12 +20,19 @@ const createApi = () => {
   const login = (payload) => api.post("/user/login", payload);
   const getUsers = (payload, token) => api.get("/user", payload, tokenOption(token));
   const register = (payload) => api.post("/user/register", payload);
-  const getType = (payload) => api.get("/project", payload);
+  const getType = (payload) => api.get("/type", payload);
+  const getProduct = (payload) => api.get("/project", payload);
+  const getHome = (payload) => api.get("/", payload);
+  const getSearch = (payload) => api.get("/search", payload);
+
   return {
     login,
     register,
     getUsers,
     getType,
+    getProduct,
+    getHome,
+    getSearch,
   };
 };
 

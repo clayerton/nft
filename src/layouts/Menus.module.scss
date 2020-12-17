@@ -3,7 +3,12 @@
     background: #112DF2;
     min-height: calc(100vh - 206px);
     padding: 0 18px;
-    padding-top: 206px;
+    .logo {
+        padding: 0 5px;
+        width: 100%;
+        padding-top: 53px;
+        padding-bottom: 100px;
+    }
     .router {
         width: 194px;
         height: 64px;
@@ -13,7 +18,9 @@
         .link {
             color: #fff;
             padding-left: 63px;
-
+            font-family: NotoSansHans-Medium-GBpc-EUC-H;
+            font-weight: bold;
+            font-size: 16px;
         }
         
     }

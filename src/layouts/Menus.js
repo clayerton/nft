@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom';
 import { ROUTES } from '../config/routes.config';
 import _ from 'lodash';
 import styles from './Menus.module.scss';
+import Logo from "../assets/logo.png";
+
 const routes = _.clone(ROUTES);
 
 const Menus = props => {
@@ -16,6 +18,7 @@ const Menus = props => {
     }, [])
     return (
         <div className={styles.nav}>
+            <img className={styles.logo} src={Logo} />
             {
                 routes.map((route, index) => {
                     return (
@@ -23,7 +26,6 @@ const Menus = props => {
                             <div className={styles.link} key={index}>
                                 {route.text}
                             </div>
-
                         </Link>
                     )
                 })

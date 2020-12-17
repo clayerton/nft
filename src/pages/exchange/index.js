@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const Component = props => {
     return (
-        <div>exchange</div>
+        <div></div>
     )
 }
 export default Component;
